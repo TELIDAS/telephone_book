@@ -1,0 +1,23 @@
+{% load static %}
+<h1>Searched Number</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Searched Number</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css"/>
+
+</head>
+<body class="body" style="background-color: #f6f6f6">
+<div>
+<ul>
+  {% for i in object_list %}
+    <li>
+      <h4>{{ i.name }}</h4>
+        <h3>{{ i.number }}</h3>
+    </li>
+  {% endfor %}
+</ul>
+</div>
+</body>
+</html>
