@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>{{ phonenumber.number }}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
-<h1>Searching PhoneBook Page</h1>
+<h1 class="search">Searching PhoneBook Page</h1>
 <form action="{% url 'search_phones' %}" method="get">
-  <input name="q" type="text" placeholder="Search...">
+  <input class="search2" name="q" type="text" placeholder="Search...">
 </form>

@@ -1,11 +1,11 @@
 {% load static %}
-<h1>Searched Number</h1>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Searched Number</title>
+    <h1 class="searched">Searched Number: </h1>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 <body class="body" style="background-color: #f6f6f6">
@@ -13,8 +13,8 @@
 <ul>
   {% for i in object_list %}
     <li>
-      <h4>{{ i.name }}</h4>
-        <h3>{{ i.number }}</h3>
+      <h3 class="searched2">{{ i.name }}</h3>
+        <h3 class="searched2">{{ i.number }}</h3>
     </li>
   {% endfor %}
 </ul>
