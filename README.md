@@ -1,24 +1,31 @@
 В базе данных уже есть админ
-Логин: admin
+
+Login: admin
+
 password: admin
 
 
 Если по какой-то причине вы не можете зайти, следующие команды помогут создать админа
+
 `python manage.py createsuperuser
 `
+
 Будут поля Логин, e-mail, password
 Поле e-mail можно пропустить нажав Enter
 
 # Настройка
 
 В первую очередь навести в терминале на виртуальную среду проекта
-таким командами как:
+такими командами как:
 
 `cd path/to/telephone_book
 ` 
+
 Находясь внутри проекта через команду:
+
 `ls
 `
+
 Если Виден virtualenv, следующие команды для его активации
 
 `source venv/bin/activate
@@ -26,6 +33,7 @@ password: admin
 
 # Установка
 При активации виртуальной среды провести команду для загрузки всего нужного пакета:
+
 `pip install -r requirements.txt
 `
 
@@ -34,5 +42,7 @@ password: admin
 
 `python manage.py migrate
 `
+
 Команда для запуска всего проекта:
+
 `python manage.py runserver`
