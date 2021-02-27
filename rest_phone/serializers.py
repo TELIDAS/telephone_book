@@ -6,4 +6,4 @@ class PhoneSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PhoneNumber
-        fields = 'id number name'.split()
+        fields = ['id', 'number', 'name']
