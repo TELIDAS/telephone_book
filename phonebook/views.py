@@ -16,7 +16,8 @@ class SearchResultsView(ListView):
     def get_queryset(self):
         query = self.request.GET.get('q')
         object_list = PhoneNumber.objects.filter(
-            Q(name__icontains=query) | Q(number__icontains=query)
+            Q(name__icontains=query) | Q(number__icontains=query) |
+            Q(city__icontains=query) | Q(age__icontains=query)
         )
         return object_list
 
